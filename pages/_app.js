@@ -1,14 +1,16 @@
-import '../styles/globals.css'
+import { Navbar } from '../components/Navbar';
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
   return (
-  <div>
+    <div>
+      <Navbar />
       <Component {...pageProps} />
       <footer>
         <p>© Dogs Dao 2022</p>
       </footer>
-  </div>
+    </div>
   );
 }
 
-export default MyApp
+export default MyApp;

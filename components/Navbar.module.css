@@ -1,0 +1,13 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: url('/mesh-gradient.png');
+ /* background-color: rgba(255, 255, 255, 0.5); */
+  z-index: 20;
+  /* border-bottom: 0.2px rgba(0, 0, 0, 0.1) solid; */
+}
+
+.title2 {
+  color: var(--text-purple);
+}
