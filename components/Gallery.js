@@ -5,7 +5,7 @@ const Gallery = (props) => {
   return (
     props.data.length > 0 && (
       <div className={styles.sectionWrapper}>
-        <h2 className={styles.heading2}>{props.title}</h2>
+        <h3 className={styles.heading2}>{props.title}</h3>
         <div className={styles.cardLayout}>
           {props.data.map((d) => {
             return (

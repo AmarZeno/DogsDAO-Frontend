@@ -35,8 +35,7 @@ export default function Home() {
         <Banner buttonText='Launch' handleOnClick={handleOnBannerBtnClick} />
       </main>
 
-      <Gallery data={dogs} pathName='dog' title='Marketplace' />
-
+      <Gallery data={dogs} pathName='dog' title='Non-Fungible Dogs' />
       <footer className={styles.footer}></footer>
     </div>
   );

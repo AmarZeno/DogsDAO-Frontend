@@ -21,6 +21,7 @@ a {
 }
 
 :root {
+  --text-orange: rgba(230, 153, 97, 1);
   --text-purple: rgba(67, 56, 202, 1);
   --text-purple-dark: rgba(79, 70, 229, 1);
   --text-black: rgba(17, 24, 39, 1);
