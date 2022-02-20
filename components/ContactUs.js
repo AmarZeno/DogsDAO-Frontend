@@ -35,7 +35,6 @@ const ContactUs = (props) => (
       paddingTop: '10vh',
     }}
   >
-    <h1 style={{ fontSize: '2rem', marginBottom: '2rem' }}>Contact Information</h1>
     <div
       style={{
         height: '100%',
