@@ -4,6 +4,7 @@
 }
 
 .container {
+  margin: 1rem;
   border-radius: 0.55rem /* 12px */;
 }
 

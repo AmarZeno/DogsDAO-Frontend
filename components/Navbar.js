@@ -7,7 +7,7 @@ import { AppContext } from '../lib/UserContext';
 import styles from './Navbar.module.css';
 
 export const Navbar = () => {
-  const {user} = useContext(AppContext);
+  const { user } = useContext(AppContext);
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
@@ -56,11 +56,6 @@ export const Navbar = () => {
             <Link href={ROUTES.aboutUs}>
               <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-orange-100'>
                 About us
-              </a>
-            </Link>
-            <Link href={ROUTES.contactUs}>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-orange-100'>
-                Contact us
               </a>
             </Link>
           </div>

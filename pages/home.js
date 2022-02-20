@@ -12,6 +12,9 @@ const dogs = [
   { id: 2, name: 'Husky', imageSrc: '' },
   { id: 3, name: 'Poodle', imageSrc: '' },
   { id: 4, name: 'Shiba', imageSrc: '' },
+  { id: 5, name: 'Great Pyranese', imageSrc: '' },
+  { id: 6, name: 'Poodle', imageSrc: '' },
+
 ];
 
 const handleOnBannerBtnClick = () => {

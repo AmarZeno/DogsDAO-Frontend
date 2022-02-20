@@ -1,4 +1,5 @@
 import { Flex } from '@magiclabs/ui';
+import ContactUs from '../components/contactus';
 import styles from '../styles/aboutus.module.css';
 
 const Block = (props) => {
@@ -13,7 +14,7 @@ const AboutUs = (props) => {
       ></Block>
       <Block
         style={{
-          height: '80vh',
+          height: '90vh',
           backgroundColor: 'skyblue',
           display: 'flex',
           justifyContent: 'center',
@@ -25,13 +26,15 @@ const AboutUs = (props) => {
       ></Block>
       <Block
         style={{
-          height: '80vh',
+          height: '92vh',
           backgroundColor: 'pink',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
         }}
-      ></Block>
+      >
+        <ContactUs />
+      </Block>
     </div>
   );
 };

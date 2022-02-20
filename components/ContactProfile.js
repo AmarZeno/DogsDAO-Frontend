@@ -1,16 +1,5 @@
-import { Avatar } from '@mui/material';
+import Image from 'next/image';
 import styled from 'styled-components';
-
-const StyledContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const StyledAvatar = styled(Avatar)`
-  width: 150px;
-  height: 150px;
-`;
 
 const StyledName = styled.p`
   font-weight: bold;
@@ -26,11 +15,16 @@ const StyledLink = styled.a`
 `;
 
 const ContactProfile = (props) => (
-  <StyledContainer className={props.className} style={props.style}>
-    <StyledAvatar alt={props.name} src={props.src} />
+  <div
+    style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '2rem' }}
+    className={props.className}
+  >
+    <div style={{ borderRadius: '150px', overflow: 'hidden' }}>
+      <Image width={150} height={150} borderRadius={150} alt={props.name} src={props.src} />
+    </div>
     {props.name && <StyledName>{props.name}</StyledName>}
     {props.email && <StyledLink href={`mailto: ${props.email}`}>{props.email}</StyledLink>}
-  </StyledContainer>
+  </div>
 );
 
 export default ContactProfile;

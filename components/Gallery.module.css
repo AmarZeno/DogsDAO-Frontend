@@ -5,13 +5,19 @@
 }
 
 .sectionWrapper {
-  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
 }
 
 .cardLayout {
-  margin-top: 5rem;
-  display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   column-gap: 1.5rem;
   row-gap: 1.5rem;
 }
