@@ -1,6 +1,7 @@
 /** Mobile first development **/
 
 .container {
+  height: 100%;
   margin-bottom: 14rem /* 224px */;
 }
 
