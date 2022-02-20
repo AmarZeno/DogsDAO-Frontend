@@ -1,7 +1,6 @@
 import Gallery from '../components/Gallery';
 import Banner from '../components/Banner/banner.js';
 import styles from '../styles/Layout.module.css';
-import { Navbar } from '../components/Navbar';
 
 const dogs = [
   {
@@ -22,14 +21,10 @@ const handleOnBannerBtnClick = () => {
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Navbar />
       <main className={styles.main}>
         <Banner buttonText='Launch' handleOnClick={handleOnBannerBtnClick} />
       </main>
-
       <Gallery data={dogs} pathName='dog' title='Marketplace' />
-
-      <footer className={styles.footer}></footer>
     </div>
   );
 }

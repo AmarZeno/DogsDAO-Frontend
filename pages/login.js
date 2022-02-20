@@ -50,27 +50,23 @@ export default function Login() {
   };
 
   return (
-    <div className="login-container">
-      <h1>Sign up / Log in</h1>
+    <div style={{ marginTop: '20vh' }} className='login-container'>
+      <h1>Log In</h1>
       <TextField
-        type="email"
-        name="email"
-        required="required"
-        placeholder="Enter your email"
+        style={{ padding: '1rem 1.5rem', borderRadius: '0.5rem' }}
+        type='email'
+        name='email'
+        required='required'
+        placeholder='Enter your email'
         onChange={handleInputOnChange}
         disabled={isLoggingIn}
       />
-      <CallToAction
-        color="primary"
-        size="sm"
-        onClick={login}
-        disabled={isLoggingIn}
-      >
+      <CallToAction color='primary' size='sm' onClick={login} disabled={isLoggingIn}>
         Send Magic Link
       </CallToAction>
-      <div className="or-login-with">Or Log in With</div>
+      <div className='or-login-with'>Or Log in With</div>
       <div onClick={loginWithTwitter}>
-        <img src="/twitter.png" height={45} className="twitter-img" />
+        <img src='/twitter.png' height={50} width={50} className='twitter-img' />
       </div>
       <style>{`
         h1 {

@@ -1,11 +1,13 @@
 /*  ./components/Navbar.jsx     */
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { ROUTES } from '../constants';
+import { AppContext } from '../lib/UserContext';
 import styles from './Navbar.module.css';
 
 export const Navbar = () => {
+  const {user} = useContext(AppContext);
   const [active, setActive] = useState(false);
 
   const handleClick = () => {
@@ -49,11 +51,6 @@ export const Navbar = () => {
             <Link href={ROUTES.home}>
               <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-orange-100'>
                 Market
-              </a>
-            </Link>
-            <Link href={ROUTES.home}>
-              <a className='lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-black font-bold items-center justify-center hover:bg-orange-100 '>
-                Owner
               </a>
             </Link>
             <Link href={ROUTES.aboutUs}>

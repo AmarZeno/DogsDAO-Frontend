@@ -8,19 +8,17 @@ const Card = (props) => {
     <Link href={props.href}>
       <a className={styles.cardLink}>
         <div className={styles.container}>
+          <figure>
+            <Image
+              alt={props.name}
+              className={styles.cardImage}
+              src={props.imageSrc}
+              width={260}
+              height={160}
+            />
+          </figure>
           <div className={styles.cardHeaderWrapper}>
             <h2 className={styles.cardHeader}>{props.name}</h2>
-          </div>
-          <div className={styles.cardImageWrapper}>
-            <figure>
-              <Image
-                alt={props.name}
-                className={styles.cardImage}
-                src={props.imageSrc}
-                width={260}
-                height={160}
-              />
-            </figure>
           </div>
         </div>
       </a>
